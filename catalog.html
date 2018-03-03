@@ -10,10 +10,10 @@
 			<nav class="main-navigation">
 				<!-- Здесь будет форма поиска -->
 				<ul class="user-navigation">
-					<li class="user-navigation-profile"><a href="#">Валентин Петухов</a></li>
-					<li class="user-navigation-exit"><a>Выйти</a></li>
-					<li class="user-navigation-compare"><a href="#">Сравнить</a></li>
-					<li class="user-navigation-basket"><a href="#">Корзина</a></li>
+					<li class="link"><a href="#">Валентин Петухов</a></li>
+					<li class="link"><a>Выйти</a></li>
+					<li class="link"><a href="#">Сравнить</a></li>
+					<li class="link"><a href="#">Корзина</a></li>
 				</ul>
 				<ul class="site-navigation">
 					<li><a href="#">Каталог товаров</a>
@@ -50,7 +50,7 @@
 				<h2 class="visually-hidden">Каталог товаров</h2>
 				<div class="catalog-list">
 					<article class="catalog-item">
-						<h3><a href="#">Любительская селфи-палка</a></h3>
+						<h3 class="title"><a href="#">Любительская селфи-палка</a></h3>
 						<p>
 							<a href="#"><img src="http://placehold.it/150x100" alt="Любительская селфи-палка"></a>
 							<div class="visually-hidden">
@@ -62,7 +62,7 @@
 					</article>
 
 					<article class="catalog-item">
-						<h3><a href="#">Профессиональная селфи-палка</a></h3>
+						<h3 class="title"><a href="#">Профессиональная селфи-палка</a></h3>
 						<p>
 							<a href="#"><img src="http://placehold.it/150x100" alt="Любительская селфи-палка"></a>
 							<div class="visually-hidden">
@@ -74,7 +74,7 @@
 					</article>
 
 					<article class="catalog-item">
-						<h3><a href="#">Непотопляемая селфи-палка</a></h3>
+						<h3 class="title"><a href="#">Непотопляемая селфи-палка</a></h3>
 						<p>
 							<a href="#"><img src="http://placehold.it/150x100" alt="Любительская селфи-палка"></a>
 							<div class="visually-hidden">
@@ -86,7 +86,7 @@
 					</article>
 
 					<article class="catalog-item">
-						<h3><a href="#">Селфи-палка «Следуй за мной»</a></h3>
+						<h3 class="title"><a href="#">Селфи-палка «Следуй за мной»</a></h3>
 						<p>
 							<a href="#"><img src="http://placehold.it/150x100" alt="Любительская селфи-палка"></a>
 							<span><!-- значок new --></span>
@@ -99,43 +99,48 @@
 					</article>
 				</div>
 
-				<a class="button button-back" href="#">Назад</a>
 				<ul class="pagination-list">
+					<li><a class="button button-back" href="#">Назад</a></li>
 					<li class="pagination-item"><a class="pagination-item-current" href="#">1</a></li>
 					<li class="pagination-item"><a href="#">2</a></li>
 					<li class="pagination-item"><a href="#">3</a></li>
+					<li><a class="button button-forward" href="#">Вперед</a></li>
 				</ul>
-				<a class="button button-forward" href="#">Вперед</a>
 			</section>
 		</main>
 
 		<footer class="main-footer">
-			<a class="main-footer-logo" href="index.html"><img src="http://placehold.it/150x100" alt="Логотип Девайса"></a>
-			<nav class="footer-navigation">
-				<ul class="user-navigation">
-					<li class="user-navigation-profile"><a href="#">Валентин Петухов</a></li>
-					<li class="user-navigation-exit"><a>Выйти</a></li>
-					<li class="user-navigation-compare"><a href="#">Сравнить</a></li>
-					<li class="user-navigation-basket"><a href="#">Корзина</a></li>
+			<div class="footer-item-left">
+				<a class="main-footer-logo" href="index.html"><img src="http://placehold.it/150x100" alt="Логотип Девайса"></a>
+				<p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
+				<span><!-- полоса --></span>
+			</div>
+
+			<div class="footer-item-middle">
+				<ul class="site-navigation">
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Гарантия</a></li>
+					<li><a href="#">Контакты</a></li>
 				</ul>
-			</nav>
+				<ul class="footer-social">
+					<li class="social-button"><a href="#">Вконтакте</a></li>
+					<li class="social-button"><a href="#">Инстаграм</a></li>
+					<li class="social-button"><a href="#">Твиттер</a></li>
+				</ul>
+			</div>
 
-			<p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
-			<span><!-- полоса --></span>
-
-			<ul class="site-navigation">
-				<li><a href="#">Доставка</a></li>
-				<li><a href="#">Гарантия</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
-			<ul class="footer-social">
-				<li class="social-button"><a href="#">Вконтакте</a></li>
-				<li class="social-button"><a href="#">Инстаграм</a></li>
-				<li class="social-button"><a href="#">Твиттер</a></li>
-			</ul>
-
-			<a class="footer-phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
-			<span><a href="https://htmlacademy.ru/intensive/htmlcss"><!-- HTML Academy logo --></a></span>
+			<div class="footer-item-right">
+				<nav class="footer-navigation">
+					<ul class="user-navigation">
+						<li class="link"><a href="#">Валентин Петухов</a></li>
+						<li class="link"><a>Выйти</a></li>
+						<li class="link"><a href="#">Сравнить</a></li>
+						<li class="link"><a href="#">Корзина</a></li>
+					</ul>
+				</nav>
+				<a class="footer-phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
+				<span><a href="https://htmlacademy.ru/intensive/htmlcss"><!-- HTML Academy logo --></a></span>
+			</div>
 
 		</footer>
 	</body>
