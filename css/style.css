@@ -1,16 +1,19 @@
 @font-face {
   font-family: "Gilroy Extra Bold";
-  src: url("../fonts/gilroy/Gilroyextrabold.ttf");
+  src: url("../fonts/gilroy/Gilroyextrabold.woff2") format("woff2"),
+       url("../fonts/gilroy/Gilroyextrabold.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy Light";
-  src: url("../fonts/gilroy/Gilroylight.ttf");
+  src: url("../fonts/gilroy/Gilroylight.woff2") format("woff2"),
+       url("../fonts/gilroy/Gilroylight.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans Light";
-  src: url("../fonts/open_sans/OpenSans-Light.ttf");
+  src: url("../fonts/open_sans/OpenSans-Light.woff2") format("woff2"),
+       url("../fonts/open_sans/OpenSans-Light.woff") format("woff");
 }
 
 body {
@@ -41,13 +44,13 @@ a {
   color: rgba(0,0,0,0.3);
 }
 
-.nav-link {
+.user-link {
   color: #000;
 }
 
 .user-navigation,
 .site-navigation,
-.menu-hidden {
+.catalog-nav {
   list-style: none;
 }
 
@@ -57,21 +60,21 @@ a {
   color: #000;
 }
 
-.link-hidden {
+.catalog-nav-link {
   font-family: "Open Sans Light", Arial, sans-serif;
   line-height: 36px;
   color: #000;
 }
 
-.nav-link:hover,
+.user-link:hover,
 .site-link:hover,
-.link-hidden:hover {
+.catalog-nav-link:hover {
   color: rgba(0,0,0,0.6);
 }
 
-.nav-link:focus,
+.user-link:focus,
 .site-link:focus,
-.link-hidden:hover {
+.catalog-nav-link:focus {
   color: rgba(0,0,0,0.3);
 }
 
@@ -160,11 +163,12 @@ a {
   color: #fff;
 }
 
-.footer-section .site-link,
-.footer-section .nav-link,
-.social-link,
-.footer-phone {
-  color: #fff;
+.main-footer-logo:hover {
+  opacity: 0.6;
+}
+
+.main-footer-logo:focus {
+  opacity: 0.3;
 }
 
 .footer-section .site-link {
@@ -172,6 +176,55 @@ a {
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
+  color: #fff;
+}
+
+.footer-section .user-link {
+  color: rgba(255,255,255,0.7);
+}
+
+.footer-section .user-link:hover {
+  color: rgba(255,255,255,1);
+}
+
+.footer-section .user-link:focus {
+  color: rgba(255,255,255,0.3);
+}
+
+.footer-section .site-link {
+  color: rgba(255,255,255,1);
+}
+
+.footer-section .site-link:hover {
+  color: rgba(255,255,255,0.6);
+}
+
+.footer-section .site-link:focus {
+  color: rgba(255,255,255,0.3);
+}
+
+.social-link {
+  color: rgba(255,255,255,0.3);
+}
+
+.social-link:hover {
+  color: rgba(255,255,255,0.6)
+}
+
+.social-link:focus {
+  color: rgba(255,255,255,0.1)
+}
+
+.footer-phone {
+  color: #fff;
+}
+
+.academy-logo:hover {
+  opacity: 0.6;
+}
+
+.academy-logo:focus {
+  opacity: 0.3;
 }
 
 .modal-label {
@@ -199,9 +252,18 @@ a {
   color: #000;
 }
 
-.breadcrumbs {
+.breadcrumb-link {
   font-size: 13px;
+  line-height: 24px;
   color: rgba(0,0,0,0.3);
+}
+
+.breadcrumb-link:hover {
+  color: rgba(0,0,0,0.6);
+}
+
+.breadcrumb-link:focus {
+  color: rgba(0,0,0,0.1);
 }
 
 .filters-title {
@@ -213,6 +275,30 @@ a {
 .sorting-link {
   font-size: 14px;
   line-height: 18px;
+  color: rgba(0,0,0,0.3);
+}
+
+.sorting-link:hover {
+  color: rgba(0,0,0,0.6);
+}
+
+.sorting-link:focus {
+  color: rgba(0,0,0,1);
+}
+
+.button-up,
+.button-down {
+  opacity: 0.2;
+}
+
+.button-up:hover,
+.button-down:hover {
+  opacity: 0.4;
+}
+
+.button-up:focus,
+.button-down:focus {
+  opacity: 1;
 }
 
 .filter-title {
@@ -240,11 +326,37 @@ a {
   line-height: 24px;
 }
 
+.add-compare {
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0,0,0,0.5);
+}
+
+.add-compare:hover {
+  color: rgba(0,0,0,1);
+}
+
+.add-compare:focus {
+  color: rgba(0,0,0,0.2);
+}
+
 .pagination-link {
   font-family: "Gilroy Extra Bold", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000;
+}
+
+.pagination-page-link {
+  color: rgba(0,0,0,0.3);
+}
+
+.pagination-page-link:hover {
+  color: rgba(0,0,0,0.6);
+}
+
+.pagination-page-link:focus {
+  color: rgba(0,0,0,1);
 }
 
 .filter fieldset {

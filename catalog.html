@@ -17,27 +17,27 @@
         </form>
         <ul class="user-navigation">
           <li class="profile-link">
-            <a class="nav-link" href="profile.html">Валентин Петухов</a>
+            <a class="user-link" href="profile.html">Валентин Петухов</a>
           </li>
           <li class="exit-link">
             <a>Выйти</a>
           </li>
           <li class="compare-link">
-            <a class="nav-link" href="compare.html">Сравнить</a>
+            <a class="user-link" href="compare.html">Сравнить</a>
           </li>
           <li class="basket-link">
-            <a class="nav-link" href="basket.html">Корзина</a>
+            <a class="user-link" href="basket.html">Корзина</a>
           </li>
         </ul>
         <ul class="site-navigation">
           <li><a class="site-link" href="#">Каталог товаров</a>
-            <ul class="menu-hidden">
-              <li><a class="link-hidden" href="#">Виртуальная реальность</a></li>
-              <li><a class="link-hidden" href="#">Моноподы для селфи</a></li>
-              <li><a class="link-hidden" href="#">Экшн-камеры</a></li>
-              <li><a class="link-hidden" href="#">Фитнес-браслеты</a></li>
-              <li><a class="link-hidden" href="#">Умные часы</a></li>
-              <li><a class="link-hidden" href="#">Квадрокоптеры</a></li>
+            <ul class="catalog-nav">
+              <li><a class="catalog-nav-link" href="#">Виртуальная реальность</a></li>
+              <li><a class="catalog-nav-link" href="#">Моноподы для селфи</a></li>
+              <li><a class="catalog-nav-link" href="#">Экшн-камеры</a></li>
+              <li><a class="catalog-nav-link" href="#">Фитнес-браслеты</a></li>
+              <li><a class="catalog-nav-link" href="#">Умные часы</a></li>
+              <li><a class="catalog-nav-link" href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
           <li><a class="site-link" href="delivery.html">Доставка</a></li>
@@ -51,9 +51,9 @@
       <h1 class="page-title">Моноподы для селфи</h1>
 
       <ul class="breadcrumbs">
-        <li><a>Главная</a></li>
-        <li><a>Каталог товаров</a></li>
-        <li class="breadcrumbs-current">Моноподы для селфи</li>
+        <li><a class="breadcrumb-link" href="#">Главная</a></li>
+        <li><a class="breadcrumb-link" href="#">Каталог товаров</a></li>
+        <li class="breadcrumb-link breadcrumbs-current">Моноподы для селфи</li>
       </ul>
       <section class="filters">
         <h2 class="filters-title">Фильтр</h2>
@@ -132,8 +132,8 @@
                 <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
               </a>
               <div class="visually-hidden">
-                <button>В корзину</button>
-                <span>Добавить к сравнению</span>
+                <button class="button">В корзину</button>
+                <button class="add-compare">Добавить к сравнению</button>
               </div>
             </div>
             <p class="catalog-item-price">500 руб.</p>
@@ -146,8 +146,8 @@
                 <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
               </a>
               <div class="visually-hidden">
-                <button>В корзину</button>
-                <span>Добавить к сравнению</span>
+                <button class="button">В корзину</button>
+                <button class="add-compare">Добавить к сравнению</button>
               </div>
             </div>
             <p class="catalog-item-price">1500 руб.</p>
@@ -160,8 +160,8 @@
                 <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
               </a>
               <div class="visually-hidden">
-                <button>В корзину</button>
-                <span>Добавить к сравнению</span>
+                <button class="button">В корзину</button>
+                <button class="add-compare">Добавить к сравнению</button>
               </div>
             </div>
             <p class="catalog-item-price">2 500 руб.</p>
@@ -175,8 +175,8 @@
               </a>
               <span><!-- значок new --></span>
               <div class="visually-hidden">
-                <button>В корзину</button>
-                <span>Добавить к сравнению</span>
+                <button class="button">В корзину</button>
+                <button  class="add-compare">Добавить к сравнению</button>
               </div>
             </div>
             <p class="catalog-item-price">4 900 руб.</p>
@@ -185,9 +185,9 @@
 
         <ul class="pagination-list">
           <li><a class="button-back pagination-link" href= "#">Назад</a></li>
-          <li class="pagination-item"><a class="pagination-link pagination-item-current" href="#">1</a></li>
-          <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>
-          <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>
+          <li class="pagination-item"><a class="pagination-link pagination-page-link pagination-item-current" href="#">1</a></li>
+          <li class="pagination-item"><a class="pagination-link pagination-page-link" href="#">2</a></li>
+          <li class="pagination-item"><a class="pagination-link pagination-page-link" href="#">3</a></li>
           <li><a class="button-forward pagination-link" href="#">Вперед</a></li>
         </ul>
       </section>
@@ -219,16 +219,16 @@
         <nav class="footer-navigation">
           <ul class="user-navigation">
             <li class="profile-link">
-              <a class="nav-link" href="profile.html">Валентин Петухов</a>
+              <a class="user-link" href="profile.html">Валентин Петухов</a>
             </li>
             <li class="exit-link">
               <a>Выйти</a>
             </li>
             <li class="compare-link">
-              <a class="nav-link" href="compare.html">Сравнить</a>
+              <a class="user-link" href="compare.html">Сравнить</a>
             </li>
             <li class="basket-link">
-              <a class="nav-link" href="basket.html">Корзина</a>
+              <a class="user-link" href="basket.html">Корзина</a>
             </li>
           </ul>
         </nav>
