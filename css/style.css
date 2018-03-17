@@ -59,7 +59,7 @@ a {
 
 .site-link {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 5.4px;
   color: #000;
@@ -67,7 +67,7 @@ a {
 
 .catalog-nav-link {
   font-family: "Open Sans", Arial, sans-serif;
-  font-weight: light;
+  font-weight: 300;
   line-height: 36px;
   color: #000;
 }
@@ -107,7 +107,7 @@ a {
 
 .product-title {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 47px;
   line-height: 56px;
   color: #000;
@@ -115,7 +115,7 @@ a {
 
 .button {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -128,7 +128,7 @@ a {
 
 .product-more-info {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: light;
+  font-weight: 300;
 }
 
 .product-details {
@@ -143,7 +143,7 @@ a {
 
 .popular-title {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 24px;
 }
@@ -158,7 +158,7 @@ a {
 
 .services-title {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 47px;
   line-height: 48px;
   color: #000;
@@ -166,7 +166,7 @@ a {
 
 .info-title {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 47px;
   line-height: 48px;
   color: #000;
@@ -174,7 +174,7 @@ a {
 
 .contacts-title {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 47px;
   line-height: 48px;
   color: #000;
@@ -190,7 +190,7 @@ a {
 
 .info-company-list {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   line-height: 40px;
   color: #000;
@@ -211,7 +211,7 @@ a {
 
 .footer-section .site-link {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 24px;
   text-transform: uppercase;
@@ -268,7 +268,7 @@ a {
 
 .modal-label {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 24px;
   color: #000;
@@ -287,7 +287,7 @@ a {
 
 .page-title {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 47px;
   line-height: 48px;
   color: #000;
@@ -309,14 +309,14 @@ a {
 
 .filters-title {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
 
 .sort-title {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
 }
@@ -352,7 +352,7 @@ a {
 
 .filter-title {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 24px;
   color: #000;
@@ -360,7 +360,7 @@ a {
 
 .catalog-link {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 18px;
   line-height: 24px;
   color: #000;
@@ -373,7 +373,7 @@ a {
 
 .catalog-item-price {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: light;
+  font-weight: 300;
   font-size: 16px;
   line-height: 24px;
 }
@@ -394,7 +394,7 @@ a {
 
 .pagination-link {
   font-family: "Gilroy", Arial, sans-serif;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 16px;
   line-height: 24px;
   color: #000;
@@ -463,23 +463,30 @@ a {
   display: flex;
   position: relative;
   outline: 1px solid red;
+  width: 535px;
   min-height: 16px;
   margin: 0;
   margin-left: auto;
   padding: 0;
   list-style: none;
+  outline: 1px solid red;
 }
 
-.main-header .login-link {
-  margin-right: 238px;
+.user-nav-item {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  outline: 1px solid red;
 }
 
-.main-header .compare-link {
-  margin-right: 65px;
+.user-right-item {
+  margin-left: auto;
+  outline: 1px solid red;
 }
 
-.main-header .basket-link {
-  margin-right: 61px;
+.link-item {
+  margin-right: 63px;
 }
 
 .main-header .site-navigation {
@@ -491,16 +498,21 @@ a {
   outline: 1px solid red;
 }
 
+.site-nav-wrapper {
+  display: flex;
+  margin-left: auto;
+  outline: 1px solid red;
+}
+
 .delivery-link {
-  margin-left: 322px;
+  margin-right: 35px;
 }
 
 .warranty-link {
-  margin-left: 36px;
+  margin-right: 109px;
 }
 
 .contacts-link {
-  margin-left: auto;
   margin-right: 57px;
 }
 
@@ -599,7 +611,7 @@ a {
 }
 
 .contacts {
-  height: 560px;
+  height: 560px;  /*---- временно*/
   outline: 1px solid red;
 }
 
