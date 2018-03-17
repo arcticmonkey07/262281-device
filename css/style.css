@@ -23,7 +23,7 @@ body {
   margin: 0;
   padding: 0;
   
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -61,6 +61,7 @@ a {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 5.4px;
   color: #000;
 }
 
@@ -282,7 +283,7 @@ a {
 }
 
 
-/*catalog*/
+/* catalog */
 
 .page-title {
   font-family: "Gilroy", Arial, sans-serif;
@@ -307,6 +308,13 @@ a {
 }
 
 .filters-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sort-title {
   font-family: "Gilroy", Arial, sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -406,4 +414,354 @@ a {
 
 .filter fieldset {
   border: none;
+}
+
+/*--- временно спрятанные ---*/
+
+.visually-hidden {
+  display: none;
+}
+
+.catalog-nav {
+  display: none;
+}
+
+/* - Сеточные стили - */
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  outline: 1px solid red;
+}
+
+.main-header {
+  min-height: 150px;
+  outline: 1px solid green;
+}
+
+.main-header-logo {
+  display: block;
+  margin-top: 22px;
+  margin-left: 60px;
+  margin-bottom: 27px;
+  outline: 1px solid red;
+  height: 36px;
+}
+
+.user-nav-wrapper {
+  display: flex;
+  margin-left: 60px;
+  margin-bottom: 35px;
+}
+
+.nav-search {
+  outline: 1px solid red;
+}
+
+.main-header .user-navigation {
+  display: flex;
+  position: relative;
+  outline: 1px solid red;
+  min-height: 16px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.main-header .login-link {
+  margin-right: 238px;
+}
+
+.main-header .compare-link {
+  margin-right: 65px;
+}
+
+.main-header .basket-link {
+  margin-right: 61px;
+}
+
+.main-header .site-navigation {
+  display: flex;
+  padding: 0;
+  margin-top: 0;
+  margin-left: 60px;
+  margin-bottom: 50px;
+  outline: 1px solid red;
+}
+
+.delivery-link {
+  margin-left: 322px;
+}
+
+.warranty-link {
+  margin-left: 36px;
+}
+
+.contacts-link {
+  margin-left: auto;
+  margin-right: 57px;
+}
+
+.product-slider {
+  margin-bottom: 95px;
+}
+
+.product-slide {
+  display: flex;
+  outline: 1px solid red;
+  margin-left: 60px;
+}
+
+.product-photo {
+  padding: 0;
+  margin: 0;
+  padding-left: 30px;
+}
+
+.product-info {
+  margin-left: 125px;
+  outline: 1px solid red;
+}
+
+.popular {
+  height: 240px;
+  margin-bottom: 156px;
+  outline: 1px solid red;
+}
+
+.popular-list {
+  display: flex;
+  justify-content: space-between;
+  height: 240px;
+  padding: 0;
+  margin: 0;
+}
+
+.popular-item {
+  width: 160px;
+  padding-top: 178px;
+}
+
+.services {
+  display: flex;
+  height: 308px;
+  margin-bottom: 102px;
+  outline: 1px solid red;
+}
+
+.services-list {
+  width: 280px;
+  padding: 0;
+  margin: 0;
+  margin-top: 9px;
+}
+
+.services-item {
+  height: 38px;
+  margin-bottom: 28px;
+  outline: 1px solid red;
+}
+
+.services-list-descr {
+  width: 460px;
+  padding: 0;
+  margin: 0;
+  margin-left: 120px;
+  outline: 1px solid red;
+  list-style: none;
+}
+
+.services-title {
+  margin: 0;
+}
+
+.company-links {
+  height: 100px;
+  margin-bottom: 92px;
+  outline: 1px solid red;
+}
+
+.company-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-contacts-wrapper {
+  display: flex;
+  outline: 1px solid red;
+}
+
+.info {
+  height: 560px;
+  outline: 1px solid red;
+}
+
+.contacts {
+  height: 560px;
+  outline: 1px solid red;
+}
+
+.main-footer {
+  height: 325px;
+  margin-top: 95px;
+}
+
+.footer-wrapper {
+  display: flex;
+  padding-top: 65px;
+  height: 195px;
+}
+
+.footer-section {
+  width: 300px;
+}
+
+.footer-section:nth-child(2) {
+  width: 440px;
+}
+
+.footer-section:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  margin-left: auto;
+}
+
+.footer-section .site-navigation {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  padding-top: 69px;
+  padding-left: 66px;
+}
+
+.footer-social {
+  display: flex;
+  list-style: none;
+}
+
+.footer-navigation {
+  margin-left: auto;
+}
+
+.footer-section .user-navigation {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-phone {
+  margin-left: auto;
+}
+
+.academy-logo {
+  margin-left: auto;
+}
+
+
+/* --- catalog ---*/
+
+.main-header-catalog {
+  margin-bottom: 85px;
+}
+
+.profile-link {
+  margin-right: 21px;
+}
+
+.exit-link-catalog {
+  margin-right: 85px;
+}
+
+.page-title {
+  padding: 0;
+  margin: 0;
+  margin-left: 58px;
+  margin-bottom: 18px;
+}
+
+.breadcrumbs {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 60px;
+  margin-bottom: 45px;
+  list-style: none;
+}
+
+.catalog-columns {
+  display: flex;
+}
+
+.filters {
+  display: flex;
+  outline: 1px solid red;
+}
+
+.filters-title {
+  width: 268px;
+  height: 70px;
+  margin: 0;
+  margin-left: 58px;
+  padding: 0;
+  outline: 1px solid red;
+}
+
+.sort-title {
+  margin: 0;
+  padding: 0;
+  margin-left: 75px;
+  outline: 1px solid red;
+}
+
+.sorting {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: 103px;
+  list-style: none;
+  outline: 1px solid red;
+}
+
+.filter {
+  width: 491px;
+  height: 690px;
+  margin-left: 58px;
+  outline: 1px solid red;
+}
+
+.catalog-columns {
+  outline: 1px solid red;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 73px;
+  margin-top: 69px;
+}
+
+.catalog-item {
+  outline: 1px solid red;
+}
+
+.pagination-list {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-top: 35px;
+  margin-left: 73px;
+  list-style: none;
+  outline: 1px solid red;
+}
+
+.pagination-back {
+  margin-right: auto;
+}
+
+.pagination-forward {
+  margin-left: auto;
 }
