@@ -96,7 +96,7 @@ a {
   color: rgba(0,0,0,0.3);
 }
 
-.exit-link {
+.exit-item {
   color: rgba(0,0,0,0.3);
 }
 
@@ -485,7 +485,8 @@ a {
   outline: 1px solid red;
 }
 
-.link-item {
+.compare-item,
+.basket-item {
   margin-right: 63px;
 }
 
@@ -504,15 +505,15 @@ a {
   outline: 1px solid red;
 }
 
-.delivery-link {
+.delivery-item {
   margin-right: 35px;
 }
 
-.warranty-link {
+.warranty-item {
   margin-right: 109px;
 }
 
-.contacts-link {
+.contacts-item {
   margin-right: 57px;
 }
 
@@ -679,7 +680,7 @@ a {
   margin-bottom: 85px;
 }
 
-.profile-link {
+.profile-item {
   margin-right: 21px;
 }
 
