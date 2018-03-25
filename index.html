@@ -101,7 +101,7 @@
             </div>
           </div>
 
-          <div class="product-slide slide-wristband">
+          <div class="product-slide slide-wristband dnone">
               <p class="product-photo">
                 <img src="img/slider-2.png" width="345" height="485" alt="Фитнес-браслет">
               </p>
@@ -125,7 +125,7 @@
               </div>
             </div>
         
-            <div class="product-slide slide-copter">
+            <div class="product-slide slide-copter dnone">
               <p class="product-photo">
                 <img src="img/slider-3.png" width="526" height="334" alt="Квадрокоптер">
               </p>
@@ -213,11 +213,11 @@
               <h3 class="services-title">Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </li>
-            <li class="services-warranty">
+            <li class="services-warranty dnone">
               <h3 class="services-title">Гарантия</h3>
               <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
             </li>
-            <li class="services-credit">
+            <li class="services-credit dnone">
               <h3 class="services-title">Кредит</h3>
               <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p></li>
           </ul>
@@ -249,7 +249,7 @@
           <section class="contacts info-contacts">
             <h2 class="info-contacts-title">Контакты</h2>
             <p class="contacts-descr">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <img class="contacts-map" src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу: ул. Строителей 15, Москва">
+            <a href="#"><img class="contacts-map" src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу: ул. Строителей 15, Москва"></a>
             <a href="#" class="button button-write-us"><span class="write-us-item">Напишите нам</span></a>
           </section>
         </div>
@@ -320,33 +320,41 @@
         </div>
       </footer>
 
-      <!-- <section class="modal modal-write-us">
-          <h2 class="visually-hiden">Напишите нам</h2>
-          <form action="https://echo.htmlacademy.ru" class="write-us-form" method="post">
-            <ul class="modal-group">
-              <li>
-                <label class="modal-label" for="name">Ваше имя:</label>
-                <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-              </li>
-              <li>
-                <label class="modal-label" for="e-mail">Ваше e-mail:</label>
-                <input id="e-mail" type="text" name="e-mail" placeholder="email@example.com">
-              </li>
-              <li>
-                <label class="modal-label" for="text-letter">Текст письма:</label>
-                <input id="text-letter" type="text" name="text-letter" placeholder="В свободной форме">
-              </li>
-            <button class="button" type="submit">Отправить</button>
-          </form>
-          <button class="modal-close" type="button">Закрыть</button>
-        </section>
+      <section class="modal modal-write-us dnone">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <form action="https://echo.htmlacademy.ru" class="write-us-form" method="post">
+          <ul class="modal-group">
+            <li>
+              <ul class="modal-container">
+                <li class="modal-item item-name">
+                  <label class="modal-label" for="name">Ваше имя:</label>
+                  <input class="modal-input" id="name" type="text" name="name" placeholder="Имя Фамилия">
+                </li>
+                <li class="modal-item">
+                  <label class="modal-label" for="e-mail">Ваш e-mail:</label>
+                  <input class="modal-input" id="e-mail" type="text" name="e-mail" placeholder="email@example.com">
+                </li>
+              </ul>
+            </li>
+            <li class="textarea-item">
+              <label class="modal-label label-text" for="text-letter">Текст письма:</label>
+              <textarea class="modal-input input-textarea" name="text-letter" rows="10" placeholder="В свободной форме"></textarea>
+            </li>
+          <button class="button button-submit" type="submit"><span class="submit-item">Отправить</span></button>
+        </form>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg></button>
+      </section>
       
-        <section class="modal modal-map">
-          <h2 class="visually-hiden">Как до нас добраться</h2>
-          <p>
-            <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15, Москва">
-          </p>
-          <button class="modal-close" type="button">Закрыть</button>
-        </section> -->
+      <section class="modal modal-map dnone">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>
+          <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15, Москва">
+        </p>
+        <button class="modal-close" type="button">
+          <span class="visually-hidden">Закрыть</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 55 55"><path fill="#F0C52E" d="M27.5 0C12.312 0 0 12.312 0 27.5S12.312 55 27.5 55 55 42.688 55 27.5 42.688 0 27.5 0zm11.476 37.072l-1.486 1.426-9.99-9.574-9.987 9.574-1.488-1.426 9.988-9.573-9.987-9.573 1.487-1.425 9.987 9.573 9.988-9.573 1.487 1.425-9.989 9.574 9.99 9.572z"/></svg></button>
+      </section>
   </body>
 </html>

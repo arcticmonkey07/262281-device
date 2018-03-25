@@ -365,18 +365,6 @@ input[type="radio"].visually-hidden {
   margin-left: 60px;
 }
 
-.slide-stick {
-  display: flex;
-}
-
-.slide-wristband {
-  display: none;
-}
-
-.slide-copter {
-  display: none;
-}
-
 .product-photo {
   margin: 0;
   padding: 0;
@@ -774,18 +762,6 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/credit.svg");
 }
 
-.services-delivery {
-  display: block;
-}
-
-.services-warranty {
-  display: none;
-}
-
-.services-credit {
-  display: none;
-}
-
 .company-links {
   height: 100px;
   margin-bottom: 92px;
@@ -1135,7 +1111,40 @@ input[type="radio"].visually-hidden {
   fill: rgba(255, 198, 0, 0.3);
 }
 
+.modal {
+  position: fixed;
+  z-index: 4;
+  top: 120px;
+  left: 50%;
+  margin-left: -480px;
+  width: 960px;
+  height: 553px;
+  font-size: 0;
+  background-color: #fff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
 
+.modal-group {
+  list-style: none;
+}
+
+.modal-container {
+  display: flex;
+  margin: 0;
+  margin-top: 88px;
+  margin-left: 60px;
+  padding: 0;
+  list-style: none;
+}
+
+.modal-item {
+  margin: 0;
+  padding: 0;
+}
+
+.item-name {
+  margin-right: -50px;
+}
 
 .modal-label {
   font-size: 18px;
@@ -1145,14 +1154,86 @@ input[type="radio"].visually-hidden {
   color: #000;
 }
 
-.modal-group {
-  list-style: none;
+.modal-input {
+  padding-top: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 360px;
+  height: 50px;
+  background-color: rgba(236,236,236,0.5);
+  border: none;
+  box-sizing: border-box;
+}
+
+.textarea-item {
+  margin-top: 38px;
+  margin-left: 60px;
+  margin-bottom: 34px;
+}
+
+.label-text {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input-textarea {
+  padding-top: 15px;
+  width: 760px;
+  height: 156px;
 }
 
 .modal input::-webkit-input-placeholder {
-  color: rgba(0,0,0,0.4);
+  font: inherit;
+  font-size: 14px;
+  color: rgba(70,70,70,0.4);
 }
 
+.button-submit {
+  margin-left: 60px;
+  width: 200px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.button-submit::before {
+  width: 200px;
+}
+
+.submit-item {
+  position: relative;
+  z-index: 2;
+  padding-left: 7px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  width: 55px;
+  height: 55px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-close path {
+  fill: rgba(240,197,46,0.5);
+}
+
+.modal-close:hover path {
+  fill: rgba(240,197,46,1);
+}
+
+.modal-close:active path {
+  fill: rgba(240,197,46,0.3);
+}
+
+.dnone {
+  display: none;
+}
 
 /* ----- Стили Страницы Каталога ----- */
 
