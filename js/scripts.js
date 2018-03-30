@@ -40,15 +40,16 @@ document.querySelector('.credit-button')
   });
 
 
+// модальное окно напишите нам
+var write = document.querySelector('.button-write-us');
+var writePopup = document.querySelector('.modal-write-us');
 
-// var btns = document.getElementsByClassName('contacts-map');
-// var par = document.getElementsByClassName('modal-map');
-// btns[0].onclick = function() {
-//   par[0].classList.add("dblock");
-// }
+write.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  writePopup.classList.add('modal-write-show');
+});
 
-// var btns = document.getElementsByClassName('modal-close');
-// var par = document.getElementsByClassName('modal-map');
-// btns[1].onclick = function() {
-//   par[0].classList.remove("dblock");
-// }
+close.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  writePopup.classList.remove('modal-write-show');
+});

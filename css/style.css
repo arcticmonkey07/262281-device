@@ -83,7 +83,7 @@ a {
   position: relative;
   display: flex;
   margin-left: 60px;
-  margin-bottom: 17px;
+  margin-bottom: 26px;
 }
 
 .nav-search {
@@ -103,9 +103,7 @@ a {
 }
 
 .nav-search-input {
-  position: relative;
-  top: -10px;
-  width: 354px;
+  width: 355px;
   padding-left: 38px;
   padding-bottom: 16px;
   color: #000;
@@ -127,14 +125,11 @@ a {
   box-shadow: inset 0 -2px 0px  #000;
 }
 
-.search-button {/*
+.search-button {
   display: none;
   position: absolute;
-  top: -14px;
-  right: -80px;*/
-  position: relative;
-  top: -10px;
-  margin-left: -4px;
+  top: -9px;
+  right: -84px;
   width: 85px;
   height: 49px;
   background-color: #f7e296;
@@ -156,9 +151,9 @@ a {
   background-color: #000;
 }
 
-/*.nav-search-input:focus ~ .search-button {
+.nav-search-input:focus ~ .search-button {
   display: block;
-}*/
+}
 
 .main-header .user-navigation {
   display: flex;
@@ -325,7 +320,7 @@ a {
 }
 
 .delivery-item {
-  margin-right: 10px;
+  margin-right: 35px;
 }
 
 .warranty-item {
@@ -458,7 +453,7 @@ a {
   color: rgba(0,0,0,0.3);
 }
 
-.more-item {
+.button-more-text {
   position: relative;
   z-index: 2;
   display: block;
@@ -686,21 +681,21 @@ a {
   transition: none;
 }
 
-.button-item {
+.button-text {
   position: relative;
   z-index: 2;
   padding-left: 19px;
 }
 
-.button-item:active {
+.button-text:active {
   color: #f7e184;
 }
 
-.warranty-item {
+.warranty-text {
   padding-left: 25px;
 }
 
-.credit-item {
+.credit-text {
   padding-left: 38px;
 }
 
@@ -885,7 +880,7 @@ a {
   color: rgba(0,0,0,0.3);
 }
 
-.info-item {
+.info-text {
   position: relative;
   z-index: 2;
   padding-left: 23px;
@@ -908,7 +903,7 @@ a {
   width: 260px;
 }
 
-.write-us-item {
+.write-us-text {
   position: relative;
   z-index: 2;
   padding-left: 43px;
@@ -1247,6 +1242,14 @@ a {
   fill: rgba(240,197,46,0.3);
 }
 
+.modal-write-us {
+  display: none;
+}
+
+.modal-write-show {
+  display: block;
+}
+
 .modal-show {
   display: block;
   animation-name: bounce;
@@ -1271,6 +1274,7 @@ a {
 
 /* ----- Стили Страницы Каталога ----- */
 
+
 .main-header-catalog {
   position: relative;
   margin-bottom: 85px;
@@ -1280,7 +1284,7 @@ a {
   content: "";
   position: absolute;
   z-index: 1;
-  top: 159px;
+  top: 158px;
   left: 0;
   width: 1160px;
   height: 46px;
@@ -1681,15 +1685,11 @@ a {
   margin-bottom: 28px;
 }
 
-.catalog-item-popup {
-  display: none;
+.product-popup {
+  position: relative;
 }
 
-.catalog-item:hover .catalog-item-popup {
-  display: block;
-}
-
-.catalog-item-img:hover {
+.product-popup:hover {
   opacity: 0.7;
 }
 
@@ -1756,7 +1756,7 @@ a {
   cursor: pointer;
 }
 
-.basket-text {
+.at-basket-item {
   position: relative;
   z-index: 2;
 }
@@ -1778,7 +1778,7 @@ a {
 }
 
 .add-compare:hover {
-  color: rgba(0,0,0.1);
+  color: rgba(0,0,0,1);
 }
 
 .add-compare:focus {
