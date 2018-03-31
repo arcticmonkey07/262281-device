@@ -1,27 +1,27 @@
-// оживление блока услуги
-document.querySelector('.delivery-button')
-  .addEventListener('click', function (evt) {
-    evt.preventDefault();
-    document.querySelector('.services-delivery').classList.remove('dnone');
-    document.querySelector('.services-warranty').classList.add('dnone');
-    document.querySelector('.services-credit').classList.add('dnone');
-  });
+// // оживление блока услуги
+// document.querySelector('.delivery-button')
+//   .addEventListener('click', function (evt) {
+//     evt.preventDefault();
+//     document.querySelector('.services-delivery').classList.remove('dnone');
+//     document.querySelector('.services-warranty').classList.add('dnone');
+//     document.querySelector('.services-credit').classList.add('dnone');
+//   });
 
-document.querySelector('.warranty-button')
-  .addEventListener('click', function (evt) {
-    evt.preventDefault();
-    document.querySelector('.services-warranty').classList.remove('dnone');
-    document.querySelector('.services-delivery').classList.add('dnone');
-    document.querySelector('.services-credit').classList.add('dnone');
-  });
+// document.querySelector('.warranty-button')
+//   .addEventListener('click', function (evt) {
+//     evt.preventDefault();
+//     document.querySelector('.services-warranty').classList.remove('dnone');
+//     document.querySelector('.services-delivery').classList.add('dnone');
+//     document.querySelector('.services-credit').classList.add('dnone');
+//   });
 
-document.querySelector('.credit-button')
-  .addEventListener('click', function (evt) {
-    evt.preventDefault();
-    document.querySelector('.services-credit').classList.remove('dnone');
-    document.querySelector('.services-delivery').classList.add('dnone');
-    document.querySelector('.services-warranty').classList.add('dnone');
-  });
+// document.querySelector('.credit-button')
+//   .addEventListener('click', function (evt) {
+//     evt.preventDefault();
+//     document.querySelector('.services-credit').classList.remove('dnone');
+//     document.querySelector('.services-delivery').classList.add('dnone');
+//     document.querySelector('.services-warranty').classList.add('dnone');
+//   });
 
 
 // модальное окно с картой

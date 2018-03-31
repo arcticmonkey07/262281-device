@@ -468,13 +468,13 @@ a {
 }
 
 .product-slider-switches {
-  display: inline-block;
   float: right;
-  margin-top: 34px;
-  vertical-align: middle;
+  margin-top: 33px;
 }
 
 .switch {
+  display: inline-block;
+  vertical-align: middle;
   margin-left: 17px;
   padding: 0;
   width: 12px;
@@ -482,12 +482,14 @@ a {
   background-image: url("../img/slider-button-empty.svg");
   background-size: 12px;
   background-color: #fff;
+  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
 }
 
 .switch-active {
   background-image: url("../img/slider-button.svg");
+  background-repeat: no-repeat;
 }
 
 .product-more-info {
@@ -512,15 +514,27 @@ a {
 }
 
 .slide-stick {
-  display: flex;
+  display: none;
 }
 
 .slide-wristband {
-/*  display: flex;*/
+  display: none;
 }
 
 .slide-copter {
-/*  display: flex;*/
+  display: none;
+}
+
+#slide-1:checked ~ .slide-stick {
+  display: flex;
+}
+
+#slide-2:checked ~ .slide-wristband {
+  display: flex;
+}
+
+#slide-3:checked ~ .slide-copter {
+  display: flex;
 }
 
 .slide-wristband .product-photo{
@@ -741,18 +755,33 @@ a {
 }
 
 .services-delivery {
+  display: none;
   background-image: url("../img/delivery.svg");
   background-position: 97% 90%;
 }
 
 .services-warranty {
+  display: none;
   background-image: url("../img/warranty.svg");
   background-position: 100% 100%;
 }
 
 .services-credit {
+  display: none;
   background-image: url("../img/credit.svg");
   background-position: 96% 100%;
+}
+
+#delivery:checked ~ .services-list-descr .services-delivery {
+  display: block;
+}
+
+#warranty:checked ~ .services-list-descr .services-warranty {
+  display: block;
+}
+
+#credit:checked ~ .services-list-descr .services-credit {
+  display: block;
 }
 
 .services-descr {
@@ -984,11 +1013,11 @@ a {
 
 .footer-section .site-navigation {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   position: relative;
   margin: 0;
   margin-bottom: 58px;
+  margin-left: 35px;
   padding: 0;
 }
 
@@ -1621,6 +1650,18 @@ a {
   background-image: url("../img/checkbox-off.svg");
 }
 
+.checkbox-indicator:hover {
+  opacity: 0.6;
+}
+
+.checkbox-indicator:active {
+  opacity: 1;
+}
+
+.filter-input:disabled + .checkbox-indicator {
+  opacity: 0.25;
+}
+
 .filter-input:checked + .checkbox-indicator::before {
   content: "";
   position: absolute;
@@ -1661,6 +1702,18 @@ a {
   width: 25px;
   height: 25px;
   background-image: url("../img/radio-off.svg");
+}
+
+.radio-indicator:hover {
+  opacity: 0.6;
+}
+
+.radio-indicator:active {
+  opacity: 1;
+}
+
+.filter-input:disabled + .radio-indicator {
+  opacity: 0.25;
 }
 
 .filter-input:checked + .radio-indicator::before {

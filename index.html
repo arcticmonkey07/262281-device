@@ -77,6 +77,9 @@
         <h1 class="visually-hidden">HTML Academy: Девайс</h1>
       
         <section class="product-slider">
+          <input class="visually-hidden" type="radio" id="slide-1" name="toggle" checked>
+          <input class="visually-hidden" type="radio" id="slide-2" name="toggle">
+          <input class="visually-hidden" type="radio" id="slide-3" name="toggle">
           <div class="product-slide slide-stick">
             <p class="product-photo">
               <img src="img/slider-1.png" width="384" height="486" alt="Селфи палка">
@@ -86,9 +89,9 @@
               <p>Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <a href="#" class="button button-more-info"><span class="button-more-text">Подробнее</span></a>
               <div class="product-slider-switches">
-                <button class="switch switch-active" type="button"></button>
-                <button class="switch" type="button"></button>
-                <button class="switch" type="button"></button>
+                <label class="switch switch-active" for="slide-1"></label>
+                <label class="switch" for="slide-2"></label>
+                <label class="switch" for="slide-3"></label>
               </div>
               <table class="product-more-info">
                 <tr class="product-details">
@@ -114,9 +117,9 @@
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
               <a href="#" class="button button-more-info"><span class="button-more-text">Подробнее</span></a>
               <div class="product-slider-switches">
-                <button class="switch" type="button"></button>
-                <button class="switch switch-active" type="button"></button>
-                <button class="switch" type="button"></button>
+                <label class="switch" for="slide-1"></label>
+                <label class="switch switch-active" for="slide-2"></label>
+                <label class="switch" for="slide-3"></label>
               </div>
               <table class="product-more-info">
                 <tr class="product-details">
@@ -138,9 +141,9 @@
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
               <a href="#" class="button button-more-info"><span class="button-more-text">Подробнее</span></a>
               <div class="product-slider-switches">
-                <button class="switch" type="button"></button>
-                <button class="switch" type="button"></button>
-                <button class="switch switch-active" type="button"></button>
+                <label class="switch" for="slide-1"></label>
+                <label class="switch" for="slide-2"></label>
+                <label class="switch switch-active" for="slide-3"></label>
               </div>
               <table class="product-more-info">
                 <tr class="product-details">
@@ -203,15 +206,18 @@
         <div class="container">
           <section class="services">
             <h2 class="visually-hidden">Сервисы</h2>
+            <input class="visually-hidden" type="radio" id="delivery" name="services" checked>
+            <input class="visually-hidden" type="radio" id="warranty" name="services">
+            <input class="visually-hidden" type="radio" id="credit" name="services">
             <ul class="services-list">
               <li class="services-item delivery-button">
-                <a class="button services-button" href="delivery.html"><span class="button-text">Доставка</span></a>
+                <label for="delivery"><a class="button services-button"><span class="button-text">Доставка</span></a></label>
               </li>
               <li class="services-item warranty-button">
-                <a class="button services-button" href="warranty.html"><span class="button-text warranty-text">Гарантия</span></a>
+                <label for="warranty"><a class="button services-button"><span class="button-text warranty-text">Гарантия</span></a></label>
               </li>
               <li class="services-item credit-button">
-                <a class="button services-button" href="credit.html"><span class="button-text credit-text">Кредит</span></a>
+                <label for="credit"><a class="button services-button"><span class="button-text credit-text">Кредит</span></a></label>
               </li>
             </ul>
             <ul class="services-list-descr">
@@ -219,11 +225,11 @@
                 <h3 class="services-title">Доставка</h3>
                 <p class="services-descr">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </li>
-              <li class="services-descr-item services-warranty dnone">
+              <li class="services-descr-item services-warranty">
                 <h3 class="services-title">Гарантия</h3>
                 <p class="services-descr">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
               </li>
-              <li class="services-descr-item services-credit dnone">
+              <li class="services-descr-item services-credit">
                 <h3 class="services-title">Кредит</h3>
                 <p class="services-descr">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p></li>
             </ul>
