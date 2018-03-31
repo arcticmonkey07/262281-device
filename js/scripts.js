@@ -1,17 +1,43 @@
-// модальное окно с картой
-var link = document.querySelector('.contacts-map');
-var popup = document.querySelector('.modal-map');
-var close = document.querySelector('.close');
+// слайдер
+document.querySelector('.pagination-two')
+  .addEventListener('click', function (evt) {
+    evt.preventDefault();
+    document.querySelector('.slide-stick').classList.add('dnone');
+    document.querySelector('.slide-wristband').classList.remove('dnone');
+    document.querySelector('.slide-copter').classList.add('dnone');
+  });
 
-link.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  popup.classList.add('modal-show');
-});
+document.querySelector('.pagination-three')
+  .addEventListener('click', function (evt) {
+    evt.preventDefault();
+    document.querySelector('.slide-stick').classList.add('dnone');
+    document.querySelector('.slide-wristband').classList.add('dnone');
+    document.querySelector('.slide-copter').classList.remove('dnone');
+  });
 
-close.addEventListener('click', function (evt) {
-  evt.preventDefault();
-  popup.classList.remove('modal-show');
-});
+document.querySelector('.pagination-one')
+  .addEventListener('click', function (evt) {
+    evt.preventDefault();
+    document.querySelector('.slide-stick').classList.remove('dnone');
+    document.querySelector('.slide-wristband').classList.add('dnone');
+    document.querySelector('.slide-copter').classList.add('dnone');
+  });
+
+document.querySelector('.pagination-two-back')
+  .addEventListener('click', function (evt) {
+    evt.preventDefault();
+    document.querySelector('.slide-stick').classList.add('dnone');
+    document.querySelector('.slide-wristband').classList.remove('dnone');
+    document.querySelector('.slide-copter').classList.add('dnone');
+  });
+
+  document.querySelector('.pagination-one-back')
+  .addEventListener('click', function (evt) {
+    evt.preventDefault();
+    document.querySelector('.slide-stick').classList.remove('dnone');
+    document.querySelector('.slide-wristband').classList.add('dnone');
+    document.querySelector('.slide-copter').classList.add('dnone');
+  });
 
 
 // оживление блока услуги
@@ -40,16 +66,33 @@ document.querySelector('.credit-button')
   });
 
 
+// модальное окно с картой
+var link = document.querySelector('.contacts-map');
+var popup = document.querySelector('.modal-map');
+var close = document.querySelector('.close-map');
+
+link.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  popup.classList.add('modal-show');
+});
+
+close.addEventListener('click', function (evt) {
+  evt.preventDefault();
+  popup.classList.remove('modal-show');
+});
+
+
 // модальное окно напишите нам
 var write = document.querySelector('.button-write-us');
 var writePopup = document.querySelector('.modal-write-us');
+var writeClose = document.querySelector('.close-write');
 
 write.addEventListener('click', function (evt) {
   evt.preventDefault();
   writePopup.classList.add('modal-write-show');
 });
 
-close.addEventListener('click', function (evt) {
+writeClose.addEventListener('click', function (evt) {
   evt.preventDefault();
   writePopup.classList.remove('modal-write-show');
 });
