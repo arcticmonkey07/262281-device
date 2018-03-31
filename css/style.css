@@ -364,10 +364,11 @@ a {
 }
 
 .product-slide {
-  display: flex;
   position: relative;
+  display: none;
   z-index: 2;
   margin-left: 60px;
+  margin-bottom: 95px;
 }
 
 .product-photo {
@@ -466,14 +467,14 @@ a {
   margin-bottom: 48px;
 }
 
-.product-slider-pagination {
+.product-slider-switches {
   display: inline-block;
   float: right;
   margin-top: 34px;
   vertical-align: middle;
 }
 
-.pagination {
+.switch {
   margin-left: 17px;
   padding: 0;
   width: 12px;
@@ -485,7 +486,7 @@ a {
   cursor: pointer;
 }
 
-.pagination-active {
+.switch-active {
   background-image: url("../img/slider-button.svg");
 }
 
@@ -511,15 +512,15 @@ a {
 }
 
 .slide-stick {
-  margin-bottom: 95px;
+  display: flex;
 }
 
 .slide-wristband {
-  margin-bottom: 86px;
+/*  display: flex;*/
 }
 
 .slide-copter {
-  margin-bottom: 109px;
+/*  display: flex;*/
 }
 
 .slide-wristband .product-photo{
@@ -540,7 +541,7 @@ a {
   right: -32px;
 }
 
-.slide-wristband .pagination {
+.slide-wristband .switch {
   margin-left: 17px;
 }
 
@@ -565,7 +566,7 @@ a {
   right: 52px;
 }
 
-.slide-copter .product-slider-pagination {
+.slide-copter .product-slider-switches {
   margin-right: 83px;
 }
 
@@ -1698,39 +1699,38 @@ a {
 
 .catalog-item {
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
   margin-bottom: 28px;
   width: 360px;
   cursor: pointer;
 }
 
+.popup-container:hover .catalog-item-popup {
+  display: flex;
+}
+
+.popup-container:hover .catalog-img {
+  opacity: 0.7;
+}
+
 .catalog-item-popup {
   position: absolute;
   display: none;
+  padding-top: 35px;
   width: 360px;
-  height: 380px;
+  height: 360px;
 }
 
 .popup-buttons {
   display: flex;
   flex-direction: column;
   width: 200px;
-  height: 75px;
+  height: 85px;
   margin: auto;
-}
-
-.catalog-item:hover .catalog-item-popup {
-  display: flex;
-}
-
-
-.catalog-item:hover .catalog-img {
-  opacity: 0.7;
 }
 
 .button-basket {
   width: 200px;
+  margin-bottom: 10px;
   padding-left: 5px;
   background-color: transparent;
   border: none;
@@ -1747,6 +1747,8 @@ a {
 }
 
 .add-compare {
+  position: relative;
+  z-index: 3;
   margin: auto;
   font-size: 13px;
   line-height: 36px;
@@ -1910,7 +1912,7 @@ a {
   width: 100%;
 }
 
-.footer-navigation .profile-item path {
+.footer-navigation .profile-svg path {
   fill: #ffc600;
 }
 
