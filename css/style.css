@@ -548,19 +548,19 @@ a {
   display: none;
 }
 
-#slide-1:checked ~ .slide-stick {
+.slide-1:checked ~ .slide-stick {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#slide-2:checked ~ .slide-wristband {
+.slide-2:checked ~ .slide-wristband {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#slide-3:checked ~ .slide-copter {
+.slide-3:checked ~ .slide-copter {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -822,15 +822,15 @@ a {
   background-position: 96% 100%;
 }
 
-#delivery:checked ~ .services-list-descr .services-delivery {
+.delivery:checked ~ .services-list-descr .services-delivery {
   display: block;
 }
 
-#warranty:checked ~ .services-list-descr .services-warranty {
+.warranty:checked ~ .services-list-descr .services-warranty {
   display: block;
 }
 
-#credit:checked ~ .services-list-descr .services-credit {
+.credit:checked ~ .services-list-descr .services-credit {
   display: block;
 }
 
