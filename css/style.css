@@ -1373,6 +1373,10 @@ a {
   fill: rgba(240,197,46,0.3);
 }
 
+.map {
+  border-width: 0;
+}
+
 .modal-write-us {
   display: none;
 }
