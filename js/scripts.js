@@ -50,22 +50,22 @@ writeClose.addEventListener('click', function (evt) {
 
 
 form.addEventListener('submit', function (evt) {
-    if (!login.value || !email.value) {
+  if (!login.value || !email.value) {
     evt.preventDefault();
     writePopup.classList.add('modal-error');
-  } else {
-    if (isStorageSupport) {
-      localStorage.setItem('login', login.value);
-    }
+} else {
+  if (isStorageSupport) {
+    localStorage.setItem('login', login.value);
   }
+}
 });
 
 window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
 
-    if (writePopup.classList.contains('modal-write-show')) {
-      writePopup.classList.remove('modal-write-show');
-    }
+  if (writePopup.classList.contains('modal-write-show')) {
+    writePopup.classList.remove('modal-write-show');
   }
+}
 });
