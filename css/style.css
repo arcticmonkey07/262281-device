@@ -1283,11 +1283,11 @@ a {
 }
 
 .modal-input {
-  padding-top: 7px;
   padding-left: 20px;
   padding-right: 20px;
   width: 360px;
   height: 50px;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   background-color: rgba(236,236,236,0.5);
   border: none;
@@ -1326,7 +1326,7 @@ a {
 }
 
 .modal-input::-webkit-input-placeholder {
-  font: inherit;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   color: rgba(70,70,70,0.4);
 }
