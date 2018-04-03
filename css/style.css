@@ -441,7 +441,6 @@ a {
 .button {
   position: relative;
   display: inline-block;
-  vertical-align: middle;
   padding-top: 8px;
   width: 220px;
   height: 32px;
@@ -487,7 +486,6 @@ a {
 
 .button-more-info {
   display: inline-block;
-  vertical-align: middle;
   margin-top: 30px;
   margin-bottom: 48px;
 }
