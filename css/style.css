@@ -2135,6 +2135,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100%;
+  height: 200px;
 }
 
 .footer-navigation .profile-svg path {
